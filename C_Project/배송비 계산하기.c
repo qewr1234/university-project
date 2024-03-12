@@ -4,12 +4,12 @@ int main(void) {
 	int prices, shipping_fee;
 	char loc;
 
-	printf("Á¦Ç°ÀÇ °¡°İÀ» ÀÔ·ÂÇÏ¼¼¿ä.: ");
+	printf("ì œí’ˆì˜ ê°€ê²©ì„ ì…ë ¥í•˜ì„¸ìš”.: ");
 	scanf_s("%d", &prices);
 
-	getchar();
+	getchar(); // ì•ìª½ ë²„í¼ê°€ ë‚¨ì•„ìˆê¸° ë•Œë¬¸ì— getcharë˜ëŠ” scanf_s(" %c", &loc, 1)í˜•íƒœë¡œ ì¨ì•¼í•¨
 
-	printf("¹è¼Û À§Ä¡¸¦ ÀÔ·ÂÇÏ¼¼¿ä.: ");
+	printf("ë°°ì†¡ ìœ„ì¹˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.: ");
 	scanf_s("%c", &loc, 1);
 
 	if (loc == 'A') {
@@ -27,11 +27,11 @@ int main(void) {
 	}
 
 	else {
-		printf("À¯È¿ÇÏÁö ¾ÊÀº À§Ä¡ÀÔ´Ï´Ù.");
+		printf("ìœ íš¨í•˜ì§€ ì•Šì€ ìœ„ì¹˜ì…ë‹ˆë‹¤.");
 		return 1;
 	}
 	
-	printf("¹è¼Ûºñ´Â %d¿ø ÀÔ´Ï´Ù", shipping_fee);
+	printf("ë°°ì†¡ë¹„ëŠ” %dì› ì…ë‹ˆë‹¤", shipping_fee);
 
 	return 0;
 }
